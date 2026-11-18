@@ -293,19 +293,19 @@
         noServerShort: "сервер не выбран",
         wipeTermLabel: "Срок этого вайпа",
         authorityLabel: "Авторитет сейчас / после",
-        authorityBtn: "Усилить",
+        authorityBtn: "Добавить",
         valuationLabel: "Общая оценка аккаунта",
-        valuationBtn: "Пополнить",
+        valuationBtn: "Добавить",
         countsLabel: "Изучений / имуществ",
-        countsBtn: "Собрать",
+        countsBtn: "Добавить",
         timerLabel: "Жизнь сервера до вайпа",
         timerSub: "Цикл реалма: 7 дней",
         wipePassed: "Вайп уже прошёл",
         dayShort: "д",
         researchLabel: "Изучения · 100%",
-        researchBtn: "Ускорить",
+        researchBtn: "Добавить",
         propertyLabel: "Имущество и база · 40%",
-        propertyBtn: "Улучшить",
+        propertyBtn: "Добавить",
         cashLabel: "Отмытые деньги · 100%",
         cashBtn: "Добавить",
         buyToCap: "Докупить до 40 лет",
@@ -402,21 +402,21 @@
         noServerShort: "no server selected",
         wipeTermLabel: "Sentence this wipe",
         authorityLabel: "Reputation now / after",
-        authorityBtn: "Boost",
+        authorityBtn: "Add",
         valuationLabel: "Total account value",
-        valuationBtn: "Top up",
+        valuationBtn: "Add",
         countsLabel: "Research / property",
-        countsBtn: "Gear up",
+        countsBtn: "Add",
         timerLabel: "Server time until wipe",
         timerSub: "Realm cycle: 7 days",
         wipePassed: "Wipe completed",
         dayShort: "d",
         researchLabel: "Research · 100%",
-        researchBtn: "Skip grind",
+        researchBtn: "Add",
         propertyLabel: "Property & base · 40%",
-        propertyBtn: "Upgrade",
+        propertyBtn: "Add",
         cashLabel: "Laundered money · 100%",
-        cashBtn: "Add cash",
+        cashBtn: "Add",
         buyToCap: "Top up to 40 years",
         heistsTitle: "Major Heists & Achievements",
         heistsSub: "Your character’s heist marks",
@@ -999,7 +999,7 @@
                   <span class="hud-card__label" id="hudAuthorityLabel">Авторитет сейчас / после</span>
                   <b id="resultAuthority">#0 → #0</b>
                 </div>
-                <a class="hud-pill-btn" id="hudAuthorityBtn" href="#offersSection" data-scroll-offers="royal">Усилить</a>
+                <a class="hud-pill-btn" id="hudAuthorityBtn" href="#offersSection" data-scroll-offers="royal">Добавить</a>
               </div>
 
               <div class="hud-card hud-card--row">
@@ -1007,7 +1007,7 @@
                   <span class="hud-card__label" id="hudValuationLabel">Общая оценка аккаунта</span>
                   <b id="resultValuation">$0</b>
                 </div>
-                <a class="hud-pill-btn" id="hudValuationBtn" href="#offersSection" data-scroll-offers="cash">Пополнить</a>
+                <a class="hud-pill-btn" id="hudValuationBtn" href="#offersSection" data-scroll-offers="cash">Добавить</a>
               </div>
 
               <div class="hud-card hud-card--row">
@@ -1015,7 +1015,7 @@
                   <span class="hud-card__label" id="hudCountsLabel">Изучений / имуществ</span>
                   <b id="resultCounts">0 / 0</b>
                 </div>
-                <a class="hud-pill-btn" id="hudCountsBtn" href="#offersSection" data-scroll-offers="items">Собрать</a>
+                <a class="hud-pill-btn" id="hudCountsBtn" href="#offersSection" data-scroll-offers="items">Добавить</a>
               </div>
             </div>
 
@@ -1038,7 +1038,7 @@
                   <span class="hud-card__label" id="hudResearchLabel">Изучения · 100%</span>
                   <b id="resultResearch">$0</b>
                 </div>
-                <a class="hud-pill-btn hud-pill-btn--green" id="hudResearchBtn" href="#offersSection" data-scroll-offers="items">Ускорить</a>
+                <a class="hud-pill-btn hud-pill-btn--green" id="hudResearchBtn" href="#offersSection" data-scroll-offers="items">Добавить</a>
               </div>
 
               <div class="hud-card hud-card--row">
@@ -1046,7 +1046,7 @@
                   <span class="hud-card__label" id="hudPropertyLabel">Имущество и база · 40%</span>
                   <b id="resultProperty">$0</b>
                 </div>
-                <a class="hud-pill-btn" id="hudPropertyBtn" href="#offersSection" data-scroll-offers="royal">Улучшить</a>
+                <a class="hud-pill-btn" id="hudPropertyBtn" href="#offersSection" data-scroll-offers="royal">Добавить</a>
               </div>
 
               <div class="hud-card hud-card--row">
