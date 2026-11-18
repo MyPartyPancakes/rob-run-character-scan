@@ -4,6 +4,8 @@
 
 Статический сервис разбора персонажа ROB RUN с кроссейлом Skycoach. Бэкенд — Express (`server.js`) только как раздача статики и прокси списка серверов. Своего чекаута нет.
 
+Прод: [https://mypartypancakes.ru/](https://mypartypancakes.ru/) (хаб + калькулятор). Репозиторий: [MyPartyPancakes/rob-run-character-scan](https://github.com/MyPartyPancakes/rob-run-character-scan).
+
 ## Экраны
 
 | # | URL / состояние | Источник |
@@ -12,7 +14,7 @@
 | 1 | `/rob-run-boost/` | живой снимок `skycoach.gg/rob-run-boost` + карточка Character Scan первой |
 | 2 | `/rob-run-calc/` `start` | стартовый экран калькулятора (укорочена плашка `40 лет`, добавлен обзор 4 шагов `#landingOverview` без вычеркнутых лозунгов/соцсетей) |
 | 3 | `/rob-run-calc/` `profile` | наш экран персонажа (`app/product.js`): сервер, `#` авторитета, 3 ограбления |
-| 4 | `studies` | дерево 172 изучений Ленни (ядро + чистка «Ларри → Ленни», скрыт Discord-репорт) |
+| 4 | `studies` | дерево 172 изучений Ленни (ядро + чистка «Ларри → Ленни», скрыт Discord-репорт; в `.footer-note` только строка про цены справочника, без атрибуции RobRun) |
 | 5 | `property` | «Твоя база» (ядро + контрастный фиолетовый active-стиль карточек в модалках) |
 | 6 | `money` | деньги / контейнеры / земля / предохранители / квест Ленни |
 | 7 | `result` | финальное досье на чистом арте со спины (кнопки-пилюли `.hud-pill-btn`) + ограбления с ингейм-скринами + 5 офферов `ProductCard` в один ряд (1-я карточка — персональная рекомендация + 4 базовых SKU) + гайды `BlogCard` |
@@ -87,7 +89,7 @@ rob-run-character-scan/
   server.js                     редирект / -> /rob-run-boost/, статика, /steam-lab, /api/rob-run/servers
   lib/servers.js                кэш 15 мин + fallback на снимок серверов
   deploy/                       конфиги Nginx + Let's Encrypt и скрипты выкладки
-  public/shared/                mobile-gate.css|js (RU / EN)
+  public/shared/                mobile-gate.css|js (RU / EN), favicon/ (локальная копия Skycoach)
   public/data/                  servers.snapshot.json (623 сервера)
   public/rob-run-boost/         экран 1: живой снимок skycoach.gg + page.css|js + sprite.svg
   public/rob-run-calc/

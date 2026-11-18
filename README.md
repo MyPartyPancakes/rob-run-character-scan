@@ -95,7 +95,7 @@ years     = baseYears + (lennyQuest ? 10 : 0)
 │   └── servers.js                 Загрузка, парсинг, 15-мин кэш и snapshot-fallback серверов ROB RUN
 ├── public/
 │   ├── data/servers.snapshot.json Локальный снимок 623 серверов EU / East US
-│   ├── shared/mobile-gate.css|js  Адаптивная заглушка для узких мобильных экранов (RU / EN)
+│   ├── shared/                    mobile-gate + favicon/ (локальная копия иконок Skycoach)
 │   ├── rob-run-boost/             Экран 1: снимок витрины Skycoach + карточка Character Scan
 │   └── rob-run-calc/
 │       ├── index.html             Ядро калькулятора и каталог 172 предметов (#plannerData)
