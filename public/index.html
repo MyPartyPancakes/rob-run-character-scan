@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ROB RUN lab — Steam link → Skycoach</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <p class="kicker">Лаборатория · localhost:8787</p>
+      <h1>ROB RUN Character Lab</h1>
+      <nav class="pages" aria-label="Готовые страницы">
+        <a class="on" href="/steam-lab">Steam lab</a>
+        <a href="/rob-run-boost/">Skycoach · ROB RUN boost</a>
+        <a href="/rob-run-calc/">Калькулятор срока</a>
+      </nav>
+      <p class="lede">
+        Ссылка на Steam идёт на <strong>наш</strong> сервер, сервер ходит в Steam Community XML.
+        Браузер напрямую Steam не читает — это и есть проверка CORS.
+        Персонаж (кэш, лут, база) из Steam не приходит: его нет в официальном API.
+      </p>
+      <p class="live" id="live">ROB RUN online: …</p>
+    </header>
+
+    <section class="card">
+      <h2>1. Steam-профиль</h2>
+      <form id="lookup-form">
+        <label for="steam-url">Ссылка или SteamID64</label>
+        <div class="row">
+          <input
+            id="steam-url"
+            name="url"
+            type="text"
+            placeholder="https://steamcommunity.com/id/имя или /profiles/7656119…"
+            autocomplete="off"
+            required
+          />
+          <button type="submit" id="lookup-btn">Тянуть</button>
+        </div>
+      </form>
+      <div class="probes">
+        <button type="button" id="probe-direct" class="ghost">Проверить CORS из браузера</button>
+        <button type="button" id="probe-sample" class="ghost">Подставить публичный профиль</button>
+      </div>
+      <pre class="log" id="cors-log">CORS: ещё не проверяли</pre>
+    </section>
+
+    <section class="grid">
+      <article class="card" id="profile-card">
+        <h2>Что вернул Steam</h2>
+        <div id="profile-empty" class="muted">Пока пусто. Вставьте ссылку.</div>
+        <div id="profile-view" hidden></div>
+      </article>
+
+      <article class="card">
+        <h2>2. Персонаж ROB RUN</h2>
+        <p class="hint">Этого Steam не отдаёт. Для теста — руками, как в задании: «любой формат ввода».</p>
+        <form id="hero-form" class="stack">
+          <label>UID из Esc в игре <input name="uid" placeholder="не SteamID" /></label>
+          <label>Сервер / ID сервера <input name="server" placeholder="нужен для in-game trade" /></label>
+          <label>Роль
+            <select name="role">
+              <option value="unknown">не знаю</option>
+              <option value="criminal">criminal</option>
+              <option value="cop">cop</option>
+            </select>
+          </label>
+          <label>Кэш на руках, примерно
+            <select name="cash">
+              <option value="broke">почти ноль / после вайпа</option>
+              <option value="starter">хватит на стартовый набор</option>
+              <option value="mid">есть на тачку и броню</option>
+              <option value="rich">уже не знаю куда девать</option>
+            </select>
+          </label>
+          <fieldset>
+            <legend>Что уже есть</legend>
+            <label class="check"><input type="checkbox" name="hasBase" /> база</label>
+            <label class="check"><input type="checkbox" name="hasCar" /> своя тачка</label>
+            <label class="check"><input type="checkbox" name="hasHeli" /> вертолёт</label>
+            <label class="check"><input type="checkbox" name="hasDecoder" /> decoder</label>
+            <label class="check"><input type="checkbox" name="hasDrill" /> vault drill</label>
+          </fieldset>
+          <button type="submit">Разобрать и показать офферы</button>
+        </form>
+      </article>
+    </section>
+
+    <section class="card" id="offers-card">
+      <h2>3. Кроссейл Skycoach</h2>
+      <div id="offers" class="offers">Заполните персонажа — появятся офферы с реальными URL skycoach.gg</div>
+    </section>
+  </div>
+  <script src="/app.js"></script>
+</body>
+</html>

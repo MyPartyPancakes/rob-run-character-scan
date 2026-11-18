@@ -1,0 +1,16 @@
+{
+  "name": "rob-run-character-scan",
+  "private": true,
+  "version": "1.0.0",
+  "description": "ROB RUN Character Scan & Skycoach cross-sell web service",
+  "type": "module",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

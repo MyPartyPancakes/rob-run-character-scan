@@ -1,0 +1,21 @@
+# Dependencies
+node_modules/
+
+# Environment & local deployment secrets
+.env
+.env.*
+!.env.example
+secrets/
+
+# Local AI workspace notes (kept locally, excluded from public repo)
+docs/RULES.md
+docs/master_plan.md
+docs/project_log.md
+docs/prompt.md
+
+# OS & editor artifacts
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.log
