@@ -52,7 +52,7 @@ years     = baseYears + (lenny ? 10 : 0)
 | `police` | Взлом полицейского арсенала / Police Arsenal Break-in | `Disarmed and Dangerous` | `scene-police-real.webp` + `item-lmg.webp` (пулемёт `LM 249 Mk2`) |
 | `gallery` | Кража музейного экспоната / Museum Exhibit Theft | `Hands Off` | `scene-gallery-real.jpg` + `item-egg.webp` (`BIG EGG #53`) |
 
-На экране 7 у выполненных ограблений кнопка скрыта; у незакрытых отображается кнопка `Пройти с пачкой ↓` (`Clear with crew ↓`), плавно скроллящая к `#offersSection`.
+На экране 7 у выполненных ограблений кнопка скрыта; у незакрытых отображается кнопка `Помощь с прохождением` (`Help with completion`), плавно скроллящая к `#offersSection`.
 
 ## Серверы
 
@@ -77,7 +77,7 @@ years     = baseYears + (lenny ? 10 : 0)
 | Royal Bundle | `$29.99` | https://skycoach.gg/rob-run-boost/products/royal-bundle-13125 |
 | Напарники / Crew for Hire | `$7.99` | https://skycoach.gg/rob-run-boost/products/crew-for-hire-13123 |
 
-Все вспомогательные CTA выше блока услуг (кнопки-пилюли `.hud-pill-btn` в плашках досье, `Докупить до 40 лет`, `Пройти с пачкой ↓`) **плавно прокручивают страницу к `#offersSection`** с подсветкой соответствующей карточки, без внешнего редиректа.
+Все вспомогательные CTA выше блока услуг (кнопки-пилюли `.hud-pill-btn` в плашках досье, `Докупить до 40 лет`, `Помощь с прохождением`) **плавно прокручивают страницу к `#offersSection`** с подсветкой соответствующей карточки, без внешнего редиректа.
 
 ## Слой кода
 

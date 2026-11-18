@@ -868,42 +868,31 @@
   font-variant-numeric: tabular-nums;
 }
 
-/* Subtle pill scroll buttons inside HUD stat rows */
-.hud-pill-btn {
+/* Compact Skycoach CTA pills inside HUD stat rows (#5a30ff like .sc-btn--violet) */
+.hud-pill-btn,
+.hud-pill-btn--green {
   flex-shrink: 0;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   padding: 5px 11px;
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.09);
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  color: rgba(255, 255, 255, 0.86) !important;
+  background: #5a30ff;
+  border: 0;
+  color: #ffffff !important;
   font-size: 11px;
   font-weight: 600;
   line-height: 1.2;
   text-decoration: none;
   white-space: nowrap;
-  transition: background 0.2s, border-color 0.2s, color 0.2s, transform 0.2s;
+  transition: background 0.2s, color 0.2s, transform 0.2s;
 }
 
-.hud-pill-btn:hover {
-  background: rgba(255, 255, 255, 0.2);
-  border-color: rgba(255, 255, 255, 0.36);
+.hud-pill-btn:hover,
+.hud-pill-btn--green:hover {
+  background: #724dff;
   color: #ffffff !important;
   transform: translateY(-1px);
-}
-
-.hud-pill-btn--green {
-  background: rgba(19, 193, 0, 0.16);
-  border-color: rgba(19, 193, 0, 0.32);
-  color: #5ef24c !important;
-}
-
-.hud-pill-btn--green:hover {
-  background: rgba(19, 193, 0, 0.28);
-  border-color: rgba(19, 193, 0, 0.55);
-  color: #8aff7b !important;
 }
 
 /* Cap bar right beneath Hero Stage */
@@ -1212,21 +1201,20 @@
   gap: 4px;
   padding: 6px 11px;
   border-radius: 8px;
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.16);
-  color: #f4f4f7 !important;
+  background: #5a30ff;
+  border: 0;
+  color: #ffffff !important;
   font-size: 12px;
   font-weight: 600;
   text-decoration: none;
   white-space: nowrap;
-  transition: background 0.2s, border-color 0.2s, color 0.2s, transform 0.2s;
+  transition: background 0.2s, color 0.2s, transform 0.2s;
 }
 
 .heist-card__scroll-btn:hover {
-  background: #5a30ff;
-  border-color: #8248ff;
+  background: #724dff;
   color: #ffffff !important;
-  transform: translateY(1px);
+  transform: translateY(-1px);
 }
 
 #offersSection {
