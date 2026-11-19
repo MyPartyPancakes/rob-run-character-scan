@@ -15,7 +15,7 @@
   gate.setAttribute("data-no-translate", "");
   gate.innerHTML = `
     <div class="mobile-gate__card">
-      <img src="https://skycoach.gg/images/logos/rebranded/logo.svg" alt="Skycoach" />
+      <img src="/rob-run-boost/vendor/images/logos/rebranded/logo.svg" alt="Skycoach" />
       <h2 id="mobile-gate-title">${isEn ? "Open on a computer" : "Откройте на компьютере"}</h2>
       <p id="mobile-gate-body">${
         isEn

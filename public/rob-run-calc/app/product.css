@@ -6,8 +6,8 @@
   font-weight: 400;
   font-display: swap;
   src:
-    url("https://skycoach.gg/fonts/SKSkycoach/SKSkycoach-Regular.woff2") format("woff2"),
-    url("https://skycoach.gg/fonts/SKSkycoach/SKSkycoach-Regular.ttf") format("opentype");
+    url("/rob-run-boost/vendor/fonts/SKSkycoach/SKSkycoach-Regular.woff2") format("woff2"),
+    url("/rob-run-boost/vendor/fonts/SKSkycoach/SKSkycoach-Regular.ttf") format("opentype");
 }
 
 @font-face {
@@ -16,8 +16,8 @@
   font-weight: 500;
   font-display: swap;
   src:
-    url("https://skycoach.gg/fonts/SKSkycoach/SKSkycoach-Medium.woff2") format("woff2"),
-    url("https://skycoach.gg/fonts/SKSkycoach/SKSkycoach-Medium.ttf") format("opentype");
+    url("/rob-run-boost/vendor/fonts/SKSkycoach/SKSkycoach-Medium.woff2") format("woff2"),
+    url("/rob-run-boost/vendor/fonts/SKSkycoach/SKSkycoach-Medium.ttf") format("opentype");
 }
 
 @font-face {
@@ -26,8 +26,8 @@
   font-weight: 700;
   font-display: swap;
   src:
-    url("https://skycoach.gg/fonts/SKSkycoach/SKSkycoach-Bold.woff2") format("woff2"),
-    url("https://skycoach.gg/fonts/SKSkycoach/SKSkycoach-Bold.ttf") format("opentype");
+    url("/rob-run-boost/vendor/fonts/SKSkycoach/SKSkycoach-Bold.woff2") format("woff2"),
+    url("/rob-run-boost/vendor/fonts/SKSkycoach/SKSkycoach-Bold.ttf") format("opentype");
 }
 
 @font-face {
@@ -36,8 +36,8 @@
   font-weight: 400;
   font-display: swap;
   src:
-    url("https://skycoach.gg/fonts/Stolzl/Stolzl-Regular.woff2") format("woff2"),
-    url("https://skycoach.gg/fonts/Stolzl/Stolzl-Regular.ttf") format("opentype");
+    url("/rob-run-boost/vendor/fonts/Stolzl/Stolzl-Regular.woff2") format("woff2"),
+    url("/rob-run-boost/vendor/fonts/Stolzl/Stolzl-Regular.ttf") format("opentype");
 }
 
 [hidden] {

@@ -22,15 +22,15 @@
   const MAX_AUTHORITY = 1200;
   const WIPE_MS = 7 * 24 * 60 * 60 * 1000;
   const HERO_ART = "./app/assets/hero-clean.jpg";
-  const GAME_ICON = "https://skycoach.gg/storage/uploads/game-assets/icons/92b338d15a.svg";
+  const GAME_ICON = "/rob-run-boost/vendor/storage/uploads/game-assets/icons/92b338d15a.svg";
 
   const OFFERS = {
     cash: {
       id: "cash",
       href: `${HUB}/cash`,
       priceHtml: '$1<sup class="sc-cents">99</sup>',
-      art: "https://skycoach.gg/storage/uploads/products/rob-run-cash1794404240_picture_bg.png",
-      icon: "https://skycoach.gg/storage/uploads/products/rob-run-cash1794409915_picture_item_small.png",
+      art: "/rob-run-boost/vendor/storage/uploads/products/rob-run-cash1794404240_picture_bg.png",
+      icon: "/rob-run-boost/vendor/storage/uploads/products/rob-run-cash1794409915_picture_item_small.png",
       ru: {
         title: "Наличные",
         cta: "Купить",
@@ -46,8 +46,8 @@
       id: "items",
       href: `${HUB}/products/items-13124`,
       priceHtml: '$7<sup class="sc-cents">99</sup>',
-      art: "https://skycoach.gg/storage/uploads/products/rob-run-items1794410932_picture_bg.png",
-      icon: "https://skycoach.gg/storage/uploads/products/rob-run-items1794412902_picture_item_small.png",
+      art: "/rob-run-boost/vendor/storage/uploads/products/rob-run-items1794410932_picture_bg.png",
+      icon: "/rob-run-boost/vendor/storage/uploads/products/rob-run-items1794412902_picture_item_small.png",
       ru: {
         title: "Предметы",
         cta: "Купить",
@@ -63,8 +63,8 @@
       id: "royal",
       href: `${HUB}/products/royal-bundle-13125`,
       priceHtml: '$29<sup class="sc-cents">99</sup>',
-      art: "https://skycoach.gg/storage/uploads/products/rob-run-royal-bundle1794412428_picture_bg.png",
-      icon: "https://skycoach.gg/storage/uploads/products/rob-run-royal-bundle1794412428_picture_item_small.png",
+      art: "/rob-run-boost/vendor/storage/uploads/products/rob-run-royal-bundle1794412428_picture_bg.png",
+      icon: "/rob-run-boost/vendor/storage/uploads/products/rob-run-royal-bundle1794412428_picture_item_small.png",
       ru: {
         title: "Royal Bundle",
         cta: "Купить",
@@ -80,8 +80,8 @@
       id: "crew",
       href: `${HUB}/products/crew-for-hire-13123`,
       priceHtml: '$7<sup class="sc-cents">99</sup>',
-      art: "https://skycoach.gg/storage/uploads/products/rob-run-crew-for-hire1794405274_picture_bg.png",
-      icon: "https://skycoach.gg/storage/uploads/products/rob-run-crew-for-hire1794405274_picture_item_small.png",
+      art: "/rob-run-boost/vendor/storage/uploads/products/rob-run-crew-for-hire1794405274_picture_bg.png",
+      icon: "/rob-run-boost/vendor/storage/uploads/products/rob-run-crew-for-hire1794405274_picture_item_small.png",
       ru: {
         title: "Напарники",
         cta: "Купить",
@@ -98,8 +98,8 @@
   const GUIDES = [
     {
       href: "https://skycoach.gg/blog/rob-run/articles/rob-run-best-settings-guide",
-      cover: "https://skycoach.gg/storage/uploads/blog-posts/1969/images/1969_1794913484_450x350.jpg",
-      cover2x: "https://skycoach.gg/storage/uploads/blog-posts/1969/images/1969_1794913484_900x700.jpg",
+      cover: "/rob-run-boost/vendor/storage/uploads/blog-posts/1969/images/1969_1794913484_450x350.jpg",
+      cover2x: "/rob-run-boost/vendor/storage/uploads/blog-posts/1969/images/1969_1794913484_900x700.jpg",
       ru: {
         label: "Гайды ROB RUN",
         title: "Лучшие настройки ROB RUN",
@@ -115,8 +115,8 @@
     },
     {
       href: "https://skycoach.gg/blog/rob-run/articles/rob-run-best-weapons-tier-list",
-      cover: "https://skycoach.gg/storage/uploads/blog-posts/1965/images/1965_1794580791_450x350.jpg",
-      cover2x: "https://skycoach.gg/storage/uploads/blog-posts/1965/images/1965_1794580791_900x700.jpg",
+      cover: "/rob-run-boost/vendor/storage/uploads/blog-posts/1965/images/1965_1794580791_450x350.jpg",
+      cover2x: "/rob-run-boost/vendor/storage/uploads/blog-posts/1965/images/1965_1794580791_900x700.jpg",
       ru: {
         label: "Гайды ROB RUN",
         title: "Тир-лист лучшего оружия в ROB RUN",
@@ -132,8 +132,8 @@
     },
     {
       href: "https://skycoach.gg/blog/rob-run/articles/rob-run-how-to-make-money-fast",
-      cover: "https://skycoach.gg/storage/uploads/blog-posts/1964/images/1964_1794577540_450x350.jpg",
-      cover2x: "https://skycoach.gg/storage/uploads/blog-posts/1964/images/1964_1794577540_900x700.jpg",
+      cover: "/rob-run-boost/vendor/storage/uploads/blog-posts/1964/images/1964_1794577540_450x350.jpg",
+      cover2x: "/rob-run-boost/vendor/storage/uploads/blog-posts/1964/images/1964_1794577540_900x700.jpg",
       ru: {
         label: "Гайды ROB RUN",
         title: "Как быстро заработать деньги в ROB RUN",
@@ -556,7 +556,7 @@
     screen.innerHTML = `
       <div class="profile-shell">
         <div class="profile-top">
-          <img class="brand-logo" src="https://skycoach.gg/images/logos/rebranded/logo.svg" alt="Skycoach">
+          <img class="brand-logo" src="/rob-run-boost/vendor/images/logos/rebranded/logo.svg" alt="Skycoach">
           <div class="language-switch compact-language" role="group" aria-label="Interface language">
             <button type="button" data-language="ru" lang="ru">RU</button>
             <button type="button" data-language="en" lang="en">EN</button>
