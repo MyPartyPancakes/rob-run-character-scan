@@ -237,7 +237,7 @@
           step: "Шаг 02",
           badge: "100%",
           title: "Дерево изучений",
-          body: "Клик по предмету сразу отмечает цепочку предков.",
+          body: "Клик по предмету сразу отмечает цепочку элементов до него.",
         },
         {
           step: "Шаг 03",
@@ -346,7 +346,7 @@
           step: "Step 02",
           badge: "100%",
           title: "Research tree",
-          body: "Clicking an item immediately selects its prerequisite chain.",
+          body: "Clicking an item immediately marks the chain of items before it.",
         },
         {
           step: "Step 03",
@@ -1469,7 +1469,7 @@
             <img class="${trophyClass}" src="${heist.trophy}" alt="" loading="lazy">
           </div>
           <div class="heist-card__body">
-            <span class="heist-card__ach">Steam · ${heist.achievement}</span>
+            <span class="heist-card__ach">${heist.achievement}</span>
             <h3>${h.badge}</h3>
             <div class="heist-card__foot">
               <p>${h.spot}</p>
